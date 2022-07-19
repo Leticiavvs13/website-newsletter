@@ -1,0 +1,232 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoDia Tech | Pesquisa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+            *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(34, 34, 34);
+        color: white;
+        font-family: "Poppins", sans-serif;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #title{
+        flex-direction: column;
+        line-height: 27px;
+    }
+
+    li{
+        display: inline-block;
+        margin: 20px;
+    }
+
+    a{
+        color: white;
+    }
+    a:hover{
+        color: rgb(99, 255, 151);
+        transition: 0.5s all;
+    }
+
+    a:last-child{
+        border: 2px solid rgb(99, 255, 151);
+        padding: 10px;
+        border-radius: 15px;
+    }
+    a:last-child:hover{
+        background-color: rgb(99, 255, 151);
+        color: white;
+    }
+
+    h1{
+        font-weight: 600;
+    }
+    h2{
+        margin-top: 100px;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    h4{
+        font-size: 25px;
+        color: rgb(99, 255, 151);
+    }
+    h5{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    span{
+        color: rgb(99, 255, 151);
+    }
+
+    input[type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(99, 255, 151);
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 15px;
+    border: none;
+    margin-top: 25px;
+    }
+    input[type="submit"]:hover{
+    cursor: pointer;
+    }
+
+    .send-input{
+        margin-top: 10px;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 1px 1px 6px #0000006c;
+        font: "Poppins";
+        width: 300;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    textarea{
+        border: none;
+        border-radius: 10px;
+        width: 250;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        padding: 0.8rem 1.2rem;
+    }
+
+    div.container{
+    margin-top: 30px;
+    background: rgb(34, 34, 34);
+    max-width: 480px;
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    }
+
+    img{
+        width: 520;
+        margin: 120px;
+        margin-top: 30px;
+    }
+    main{
+        display: flex;
+        flex: row;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>TodoDia</h1>
+            <h1>Tech</h1>
+        </div>
+
+        <ul>
+            <a href="/index.html"><li>Início</li></a>
+            <a href="/sobre.html"><li>Sobre</li></a>
+            <a href="/form.html"><li>Responda nossa pesquisa!</li></a>
+        </ul>
+    </header>
+
+
+    <h2>Nos ajude a melhorar a <span>Newsletter.</span></h2>
+    <h3>Responda as perguntas abaixo e as enviando para nossa equipe!</h3>
+
+    <main>
+        
+        <aside>
+        <div class="container">
+        <div>
+            <h4>Formulário</h4>
+        </div>
+
+       <form action="">
+            <div class="age-inputs">
+                <div class="age-title">
+                    <h5>Qual sua faixa etária?</h5>
+                </div>
+                
+                <div class="age-group">
+                    <div class="age-input">
+                        <input type="radio" id="juvenil" name="age">
+                        <label for="juvenil">16-24</label>
+                    </div>
+
+                    <div class="age-input">
+                        <input type="radio" id="adulto" name="age">
+                        <label for="adulto">25-60</label>
+                    </div>
+
+                    <div class="age-input">
+                        <input type="radio" id="idoso" name="age">
+                        <label for="idoso">61+</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-preferences">
+                <div class="prefer-title">
+                    <h5>Qual sua área preferida da tecnologia?</h5>
+                </div>
+
+                <div class="prefer-input">
+                    <input type="radio" id="safety" name="prefer">
+                    <label for="safety">Segurança</label>
+                </div>
+
+                <div class="prefer-input">
+                    <input type="radio" id="programming" name="prefer">
+                    <label for="programming">Programação</label>
+                </div>
+
+                <div class="prefer-input">
+                    <input type="radio" id="bd" name="prefer">
+                    <label for="bd">Banco de Dados</label>
+                </div>
+            </div>
+
+            <div class="input-send">
+                <div class="send-title">
+                    <h5>O que achou do nosso site?</h5>
+                </div>
+
+                <div class="send-input">
+                    <textarea type="text" id="txtsend" name="txtsend" placeholder="Sua Opinião"></textarea>
+                </div>
+            </div>
+
+            <div class="continue-button">
+                <input type="submit" value="Enviar Pesquisa">
+            </div>
+
+       </form>
+    </div>
+    </aside>
+
+    <article>
+        <img src="/images/undraw_conversation_re_c26v.svg" alt="nl">
+    </article>
+</main>
+</body>
+</html>
