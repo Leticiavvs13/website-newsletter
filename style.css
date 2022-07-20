@@ -105,15 +105,6 @@ input{
     font-size: 15px;
 }
 
-div.container{
-    margin-top: 30px;
-    background: rgb(34, 34, 34);
-    max-width: 480px;
-    min-height: 40vh;
-    padding: 2rem;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-}
 
 @media screen and (max-width: 760px) {
     header{
